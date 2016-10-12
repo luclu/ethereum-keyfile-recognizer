@@ -1,7 +1,14 @@
 # ethereum-keyfile-recognizer
 
+[![Build Status](https://travis-ci.org/luclu/ethereum-keyfile-recognizer.svg?branch=master)](https://travis-ci.org/luclu/ethereum-keyfile-recognizer)
+
 https://github.com/ethereum/wiki/wiki/Web3-Secret-Storage-Definition
 
+## Installation
+
+```shell
+npm install --save ethereum-client-binaries
+```
 
 ## Development
 

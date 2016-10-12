@@ -2,14 +2,15 @@ os: osx
 language: node_js
 
 node_js:
-  - "4"
-  - "6"
+  - 4
+  - 6
 
 install:
-  - "npm install -g mocha"
+  - npm install -g mocha
+  - npm install
 
 script:
-  - "npm test"
+  - npm test
 
 notifications:
   email: EMAIL
