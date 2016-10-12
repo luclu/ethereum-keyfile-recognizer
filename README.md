@@ -2,6 +2,7 @@
 
 https://github.com/ethereum/wiki/wiki/Web3-Secret-Storage-Definition
 
+
 ## Development
 
 To build and run the tests:
