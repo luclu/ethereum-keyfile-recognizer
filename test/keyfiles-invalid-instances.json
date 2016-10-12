@@ -1,0 +1,64 @@
+{
+    "invalid-key": {
+        "address": "7693f032fd9553cccc709202904eaa3c3bf0400e",
+        "crypto": {
+            "cipher": "aes-128-ctr",
+            "ciphertext": "285367356ef9e859b63f6cd64185562ee00db582ae0c05428719522c97aa267c",
+            "cipherparams": {
+                "iv": "44e11db2c3eadf18bd1961d249607fcb"
+            },
+            "kdf": "scrypt",
+            "kdfparams": {
+                "dklen": 32,
+                "xxxxx": 262144,
+                "p": 1,
+                "r": 8,
+                "salt": "46eea9d5bb8ff406f44b0b326c0b36fa4772b849a38e4cb54a624099c9cbc68f"
+            },
+            "mac": "1c7c45dbd1aef9cda649cb6324f7a6569a181c990db9364e380f8a780bd7b9a6"
+        },
+        "id": "9130c855-3125-4de3-801e-0578f856847e",
+        "version": 3
+    },
+    "missing-key": {
+        "address": "7693f032fd9553cccc709202904eaa3c3bf0400e",
+        "crypto": {
+            "cipher": "aes-128-ctr",
+            "ciphertext": "285367356ef9e859b63f6cd64185562ee00db582ae0c05428719522c97aa267c",
+            "cipherparams": {
+                "iv": "44e11db2c3eadf18bd1961d249607fcb"
+            },
+            "kdf": "scrypt",
+            "kdfparams": {
+                "dklen": 32,
+                "p": 1,
+                "r": 8,
+                "salt": "46eea9d5bb8ff406f44b0b326c0b36fa4772b849a38e4cb54a624099c9cbc68f"
+            },
+            "mac": "1c7c45dbd1aef9cda649cb6324f7a6569a181c990db9364e380f8a780bd7b9a6"
+        },
+        "id": "9130c855-3125-4de3-801e-0578f856847e",
+        "version": 3
+    },
+    "invalid-value-type": {
+        "address": "7693f032fd9553cccc709202904eaa3c3bf0400e",
+        "crypto": {
+            "cipher": "aes-128-ctr",
+            "ciphertext": "285367356ef9e859b63f6cd64185562ee00db582ae0c05428719522c97aa267c",
+            "cipherparams": {
+                "iv": "44e11db2c3eadf18bd1961d249607fcb"
+            },
+            "kdf": "scrypt",
+            "kdfparams": {
+                "dklen": 32,
+                "n": "foo",
+                "p": 1,
+                "r": 8,
+                "salt": "46eea9d5bb8ff406f44b0b326c0b36fa4772b849a38e4cb54a624099c9cbc68f"
+            },
+            "mac": "1c7c45dbd1aef9cda649cb6324f7a6569a181c990db9364e380f8a780bd7b9a6"
+        },
+        "id": "9130c855-3125-4de3-801e-0578f856847e",
+        "version": 3
+    }
+}

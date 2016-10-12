@@ -1,0 +1,40 @@
+{
+    "name": "ethereum-keyfile-recognizer",
+    "version": "1.0.0",
+    "description": "Checks for valid structure of ethereum web3-secret-storage/presale keyfiles",
+    "main": "src/index.js",
+    "scripts": {
+        "test": "mocha"
+    },
+    "repository": {
+        "url": "git+https://github.com/luclu/ethereum-keyfile-recognizer.git",
+        "type": "git"
+    },
+    "keywords": [
+        "ethereum",
+        "blockchain",
+        "web3",
+        "web3-secret-storage",
+        "keyfile",
+        "geth",
+        "eth",
+        "parity",
+        "ethereumj",
+        "ethereumjs",
+        "pyethereum"
+    ],
+    "author": "Luca Zeug",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/luclu/ethereum-keyfile-recognizer/issues"
+    },
+    "homepage": "https://github.com/luclu/ethereum-keyfile-recognizer#readme",
+    "dependencies": {
+        "json-structure-diff": "0.0.2",
+        "underscore": "^1.8.3"
+    },
+    "devDependencies": {
+        "chai": "^3.5.0",
+        "mocha": "^3.1.2"
+    }
+}

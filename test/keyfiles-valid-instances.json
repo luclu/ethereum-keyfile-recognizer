@@ -1,0 +1,93 @@
+{
+    "ethersale": {
+        "encseed" : "957e46d54c10da45351554eb60d731b164043743dfb212ccf1827491a01cf344b390e4ac5af640e4f54ff28b046e48dc84094b99011d72ca79f2da9aa2792f4d2b8545455ca8dbba15d69048b3f95eccfed2d19427abcb2c9483e7491163eb1b",
+        "ethaddr" : "ba73facb4f8291f09f27f90fe1213537b910065e",
+        "email" : "foo@bar.com",
+        "btcaddr" : "1JEQr5LHrY8yVmWFaB31BVa9Y6sLQ9Kg41"
+    },
+    "web3-v3-geth":{
+        "address":"7693f032fd9553cccc709202904eaa3c3bf0400e",
+        "crypto":{
+            "cipher":"aes-128-ctr",
+            "ciphertext":"285367356ef9e859b63f6cd64185562ee00db582ae0c05428719522c97aa267c",
+            "cipherparams":{
+                "iv":"44e11db2c3eadf18bd1961d249607fcb"
+            },
+            "kdf":"scrypt",
+            "kdfparams":{
+                "dklen":32,
+                "n":262144,
+                "p":1,
+                "r":8,
+                "salt":"46eea9d5bb8ff406f44b0b326c0b36fa4772b849a38e4cb54a624099c9cbc68f"
+            },
+            "mac":"1c7c45dbd1aef9cda649cb6324f7a6569a181c990db9364e380f8a780bd7b9a6"
+        },
+        "id":"9130c855-3125-4de3-801e-0578f856847e",
+        "version":3
+    },
+    "web3-v3-eth":{
+        "address" : "92f13ca44409e29cf541f241dec06deb464d258d",
+        "crypto" : {
+            "cipher" : "aes-128-ctr",
+            "cipherparams" : {
+                "iv" : "87a2e223ab2bb84304d5eddf90aeea70"
+            },
+            "ciphertext" : "3368faf2b515778b40a7b11969a4ce92ae3267f107ba9923f2e42d716336ae3e",
+            "kdf" : "scrypt",
+            "kdfparams" : {
+                "dklen" : 32,
+                "n" : 262144,
+                "p" : 1,
+                "r" : 8,
+                "salt" : "9599e9f0ccf3210784f118984873696c5f32f71084a7fd2e1b7ed1e260ad74bc"
+            },
+            "mac" : "3187f4b2357fdfeb59b9d36ba892d9c2fa47922cc7234c5729f5a49ddb4d4c79"
+        },
+        "id" : "544e7870-7d8f-d8c3-920f-57bde0f5c954",
+        "version" : 3
+    },
+    "web3-v3-parity":{
+        "id":"0525de0c-6d32-3047-74aa-564b8809d536",
+        "version":3,
+        "crypto":{
+            "cipher":"aes-128-ctr",
+            "cipherparams":{
+                "iv":"f3430948da5852ecef5936b55616b751"
+            },
+            "ciphertext":"2f14569a98bd783e38b8a236527285cb692cf72b2a53b930bc65b7080f0a32b3",
+            "kdf":"pbkdf2",
+            "kdfparams":{
+                "c":10240,
+                "dklen":32,
+                "prf":"hmac-sha256",
+                "salt":"866c1beedafaa6870d3d6458483ab449a40a72130bc0655fc98bc19781beabbb"
+            },
+            "mac":"762dd8abb1bce7dceca07161feed31642e2437445562ac325c034f827a0c6644"
+        },
+        "address":"e69ef9e0234fb42b395a0325a063431ad869a854",
+        "name":"0525de0c-6d32-3047-74aa-564b8809d536",
+        "meta":"{}"
+    },
+    "web3-v3-myethereumwallet":{
+        "version":3,
+        "id":"7f8a503e-e2c2-413e-852f-930599557431",
+        "address":"7d9da52cc4201dde495c1a7e186d2a17729732c5",
+        "Crypto":{
+            "ciphertext":"2631225010a30add8ff08633008a468e9be6a25567ed7b11a9075a99227f14a2",
+            "cipherparams":{
+                "iv":"953adbb96f6fac2ac4ef2fceaf204368"
+            },
+            "cipher":"aes-128-ctr",
+            "kdf":"scrypt",
+            "kdfparams":{
+                "dklen":32,
+                "salt":"8c4b04f8d052f10525129854d5bb57cbb32dbad22cb88bede30485ed108e2a52",
+                "n":1024,
+                "r":8,
+                "p":1
+            },
+            "mac":"bf888122312e14c56b1105250b8f570c2a08c70668ba6c6f4c68363392dccdb2"
+        }
+    }
+}
