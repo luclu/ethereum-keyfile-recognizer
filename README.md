@@ -2,7 +2,13 @@
 
 [![Build Status](https://travis-ci.org/luclu/ethereum-keyfile-recognizer.svg?branch=master)](https://travis-ci.org/luclu/ethereum-keyfile-recognizer)
 
-Checks for structural sanity of Ethersale and [web3-secret-storage](https://github.com/ethereum/wiki/wiki/Web3-Secret-Storage-Definition) `json`-keyfiles (validates key-names and value-types).
+Checks for structural sanity (key-names and value-types) of `json`-keyfiles.
+
+Currently recognized keyfiles:
+ - Ethersale
+ - [web3-secret-storage](https://github.com/ethereum/wiki/wiki/Web3-Secret-Storage-Definition) (v3)
+  - scrypt
+  - pbkdf2
 
 ## Installation
 
@@ -19,10 +25,10 @@ var recognizer = require('ethereum-keyfile-recognizer');
 fs.readFile('keyfile.json', (err, data) => {
     var json = JSON.parse(data);
     var result = recognizer(json);
-    /* returns:
-     *   ['ethersale', undefined]   for Ethersale keyfile
-     *                ['web3', 3]   for web3 (v3) keyfile
-     *                       null   no valid keyfile
+    /** result
+     *               [ 'web3', 3 ]   web3 (v3) keyfile
+     *  [ 'ethersale', undefined ]   Ethersale keyfile
+     *                        null     invalid keyfile
      */
 }));
 ```
