@@ -6,7 +6,7 @@ describe('recognize valid keyfiles', () => {
     var json = JSON.parse(fs.readFileSync('test/keyfiles-valid-instances.json'));
 
     it('type: ethersale', () => {
-        assert.deepEqual(['presale', undefined], recognizer(json['ethersale']))
+        assert.deepEqual(['ethersale', undefined], recognizer(json['ethersale']))
     });
     it('type: web3 v3 geth', () => {
         assert.deepEqual(['web3', 3], recognizer(json['web3-v3-geth']))
