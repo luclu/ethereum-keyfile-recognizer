@@ -4,11 +4,15 @@ node_js:
   - 6
 
 install:
-  - npm install -g mocha
+  - npm install -g mocha istanbul coveralls mocha-lcov-reporter
   - npm install
 
 script:
   - npm test
+
+after_script:
+  - npm run-script coverage
+  - npm run-script coveralls
 
 notifications:
   email: EMAIL
