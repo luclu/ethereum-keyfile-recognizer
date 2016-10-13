@@ -3,7 +3,7 @@
 const _ = require('underscore');
 const compare = require('json-structure-diff').compareJSONObjects;
 
-const structureJsonRaw = require('../test/keyfiles-structure.json');
+const structureJsonRaw = require('./keyfiles-structure.json');
 const structureJson = toLower(structureJsonRaw);
 
 /**

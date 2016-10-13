@@ -1,6 +1,6 @@
 {
     "name": "ethereum-keyfile-recognizer",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Checks for valid structure of ethereum web3-secret-storage/presale keyfiles",
     "main": "src/index.js",
     "scripts": {
