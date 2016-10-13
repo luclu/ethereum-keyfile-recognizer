@@ -45,6 +45,8 @@ module.exports = function(obj) {
                 throw BreakException;
             }
         });
-    } catch (e) {}
+    } catch (e) {
+        // break out of loop; keyfile already validated
+    }
     return (result) ? result : null
 }
