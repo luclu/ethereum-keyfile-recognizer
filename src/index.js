@@ -48,5 +48,5 @@ module.exports = function(obj) {
     } catch (e) {
         // break out of loop; keyfile already validated
     }
-    return (result) ? result : null
+    return result;
 }
