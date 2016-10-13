@@ -25,13 +25,13 @@ describe('recognize valid keyfiles', () => {
 describe('recognize invalid keyfiles', () => {
     var json = JSON.parse(fs.readFileSync('test/keyfiles-invalid-instances.json'));
 
-    it('type: missing key-value pair', () => {
+    it('missing key-value pair', () => {
         assert.notDeepEqual(['web3', 3], recognizer(json['missing-key']))
     });
-    it('type: invalid key', () => {
+    it('invalid key', () => {
         assert.notDeepEqual(['web3', 3], recognizer(json['invalid-key']))
     });
-    it('type: invalid value-type', () => {
+    it('invalid value-type', () => {
         assert.notDeepEqual(['web3', 3], recognizer(json['invalid-value-type']))
     });
 });
