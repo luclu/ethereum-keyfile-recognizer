@@ -12,7 +12,9 @@ function toLower(obj) {
     const newObj = {};
     _.keys(obj).forEach((key) => {
         const type = typeof (newObj[key.toLowerCase()] = obj[key]);
-        if (type === 'object') newObj[key] = toLower(newObj[key]);
+        if (type === 'object') {
+            newObj[key] = toLower(newObj[key]);
+        }
     });
     return newObj;
 }
@@ -45,7 +47,7 @@ module.exports = (obj) => {
                 throw BreakException;
             }
         });
-    } catch (e) {
+    } catch (err) {
         // break out of loop; keyfile already validated
     }
     return result;
