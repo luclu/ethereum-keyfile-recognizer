@@ -1,5 +1,3 @@
-'strict mode';
-
 const _ = require('underscore');
 const compare = require('json-structure-diff').compareJSONObjects;
 
