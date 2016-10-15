@@ -1,45 +1,48 @@
 {
-    "name": "ethereum-keyfile-recognizer",
-    "version": "1.0.2",
-    "description": "Checks for valid structure of ethereum web3-secret-storage/presale keyfiles",
-    "main": "src/index.js",
-    "scripts": {
-        "test": "mocha",
-        "coverage": "istanbul cover _mocha",
-        "coveralls": "cat ./coverage/lcov.info | coveralls"
-    },
-    "repository": {
-        "url": "git+https://github.com/luclu/ethereum-keyfile-recognizer.git",
-        "type": "git"
-    },
-    "keywords": [
-        "ethereum",
-        "blockchain",
-        "web3",
-        "web3-secret-storage",
-        "keyfile",
-        "geth",
-        "eth",
-        "parity",
-        "ethereumj",
-        "ethereumjs",
-        "pyethereum"
-    ],
-    "author": "Luca Zeug",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/luclu/ethereum-keyfile-recognizer/issues"
-    },
-    "homepage": "https://github.com/luclu/ethereum-keyfile-recognizer#readme",
-    "dependencies": {
-        "json-structure-diff": "0.0.2",
-        "underscore": "^1.8.3"
-    },
-    "devDependencies": {
-        "chai": "^3.5.0",
-        "coveralls": "^2.11.14",
-        "istanbul": "^0.4.5",
-        "mocha": "^3.1.2",
-        "mocha-lcov-reporter": "^1.2.0"
-    }
+  "name": "ethereum-keyfile-recognizer",
+  "version": "1.0.2",
+  "description": "Checks for valid structure of ethereum web3-secret-storage/presale keyfiles",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha",
+    "coverage": "istanbul cover _mocha",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
+  },
+  "repository": {
+    "url": "git+https://github.com/luclu/ethereum-keyfile-recognizer.git",
+    "type": "git"
+  },
+  "keywords": [
+    "ethereum",
+    "blockchain",
+    "web3",
+    "web3-secret-storage",
+    "keyfile",
+    "geth",
+    "eth",
+    "parity",
+    "ethereumj",
+    "ethereumjs",
+    "pyethereum"
+  ],
+  "author": "Luca Zeug",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luclu/ethereum-keyfile-recognizer/issues"
+  },
+  "homepage": "https://github.com/luclu/ethereum-keyfile-recognizer#readme",
+  "dependencies": {
+    "json-structure-diff": "0.0.2",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.14",
+    "eslint": "^3.7.1",
+    "eslint-config-airbnb-base": "^8.0.0",
+    "eslint-plugin-import": "^1.16.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.1.2",
+    "mocha-lcov-reporter": "^1.2.0"
+  }
 }

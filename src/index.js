@@ -1,10 +1,7 @@
-'use strict';
-
 const _ = require('underscore');
 const compare = require('json-structure-diff').compareJSONObjects;
 
 const structureJsonRaw = require('./keyfiles-structure.json');
-const structureJson = toLower(structureJsonRaw);
 
 /**
  * Deep copies JSON object with keys.toLowerCase()
@@ -12,13 +9,15 @@ const structureJson = toLower(structureJsonRaw);
  * @return {Object}     output
  */
 function toLower(obj) {
-    var newObj = {};
+    const newObj = {};
     _.keys(obj).forEach((key) => {
-        if (typeof(newObj[key.toLowerCase()] = obj[key]) === 'object')
-            newObj[key] = toLower(newObj[key])
+        const type = typeof (newObj[key.toLowerCase()] = obj[key]);
+        if (type === 'object') newObj[key] = toLower(newObj[key]);
     });
-    return newObj
+    return newObj;
 }
+
+const structureJson = toLower(structureJsonRaw);
 
 /**
  * Matches the input object's structure against valid keyfile structures
@@ -26,22 +25,23 @@ function toLower(obj) {
  * @param  {Object} obj input keyfile object
  * @return {[String, Number]} array of type (web3|ethersale) and version
  */
-module.exports = function(obj) {
-    var result = null;
+module.exports = (obj) => {
+    let result = null;
+    const BreakException = {};
     try {
         _.keys(structureJson).forEach((structureType) => {
-            var structure = {
+            const structure = {
                 parent: structureType,
-                content: structureJson[structureType]['json']
-            }
-            var instance = {
+                content: structureJson[structureType].json,
+            };
+            const instance = {
                 parent: 'obj',
-                content: toLower(obj)
-            }
-            var error = compare([structure, instance]);
+                content: toLower(obj),
+            };
+            const error = compare([structure, instance]);
             if (!error) {
-                var match = structureJson[structure.parent];
-                result = [ match.type, match.json.version ];
+                const match = structureJson[structure.parent];
+                result = [match.type, match.json.version];
                 throw BreakException;
             }
         });
@@ -49,4 +49,4 @@ module.exports = function(obj) {
         // break out of loop; keyfile already validated
     }
     return result;
-}
+};
