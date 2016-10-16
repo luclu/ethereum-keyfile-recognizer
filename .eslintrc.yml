@@ -8,3 +8,5 @@ rules:
     - 2
   require-jsdoc:
     - 2
+  strict:
+    - 0
