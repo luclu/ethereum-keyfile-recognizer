@@ -3,7 +3,7 @@ const recognizer = require('../src');
 const assert = require('chai').assert;
 
 describe('recognize valid keyfiles', () => {
-    var json = JSON.parse(fs.readFileSync('test/keyfiles-valid-instances.json'));
+    const json = JSON.parse(fs.readFileSync('test/keyfiles-valid-instances.json'));
 
     it('type: ethersale', () => {
         assert.deepEqual(['ethersale', undefined], recognizer(json['ethersale']))
@@ -23,7 +23,7 @@ describe('recognize valid keyfiles', () => {
 });
 
 describe('recognize invalid keyfiles', () => {
-    var json = JSON.parse(fs.readFileSync('test/keyfiles-invalid-instances.json'));
+    const json = JSON.parse(fs.readFileSync('test/keyfiles-invalid-instances.json'));
 
     it('missing key-value pair', () => {
         assert.notDeepEqual(['web3', 3], recognizer(json['missing-key']))

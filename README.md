@@ -1,6 +1,7 @@
 # ethereum-keyfile-recognizer
 
 [![Build Status](https://travis-ci.org/luclu/ethereum-keyfile-recognizer.svg?branch=master)](https://travis-ci.org/luclu/ethereum-keyfile-recognizer) [![Coverage Status](https://coveralls.io/repos/github/luclu/ethereum-keyfile-recognizer/badge.svg?branch=master)](https://coveralls.io/github/luclu/ethereum-keyfile-recognizer?branch=master) [![Code Climate](https://codeclimate.com/github/luclu/ethereum-keyfile-recognizer/badges/gpa.svg)](https://codeclimate.com/github/luclu/ethereum-keyfile-recognizer) [![npm version](https://badge.fury.io/js/ethereum-keyfile-recognizer.svg)](https://badge.fury.io/js/ethereum-keyfile-recognizer)
+[![dependencies Status](https://david-dm.org/luclu/ethereum-keyfile-recognizer/status.svg)](https://david-dm.org/luclu/ethereum-keyfile-recognizer)
 
 Checks for structural sanity (key-names and value-types) of `json`-keyfiles.
 
